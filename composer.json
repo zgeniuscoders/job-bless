@@ -1,0 +1,13 @@
+{
+  "name": "zgeniuscoders/social-network",
+  "require": {},
+  "autoload": {
+    "files": [
+      "src/Helpers/functions.php"
+    ],
+    "psr-4": {
+      "App\\": "app/",
+      "Src\\": "src/"
+    }
+  }
+}
