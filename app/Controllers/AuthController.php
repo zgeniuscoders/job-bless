@@ -7,10 +7,12 @@ class AuthController extends Controller
 
     public function login()
     {
+        views("auth/login.php");
     }
 
     public function register()
     {
+        views("auth/register.php");
     }
 
 
