@@ -10,4 +10,9 @@ class Hash
     {
         return password_hash($password, PASSWORD_BCRYPT);
     }
+
+    static public function verify(string $password,string $hash = null): bool
+    {
+        return password_verify($password, $hash);
+    }
 }

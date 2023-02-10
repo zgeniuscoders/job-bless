@@ -2,15 +2,15 @@
 
 namespace App\Models;
 
-use Src\Model;
+use Src\Core\Model;
 
 class User extends Model
 {
-
     protected string $table = "users";
-
-    private string $username;
-    private string $email;
-    private string $profile;
-    private string $description;
+    public string $email;
+    public string $username;
+    public string $password;
+    public string $profile;
+    public string $createdAt;
+    public string $description;
 }

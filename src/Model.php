@@ -1,6 +1,6 @@
 <?php
 
-namespace Src;
+namespace Src\Core;
 
 use PDO;
 use Src\Database\Database;
@@ -42,11 +42,18 @@ abstract class Model
      */
     public function find(string $id)
     {
-        return $this->query(sqlRequest: "SELECT * FROM $this->table WHERE id = :id", data: ["id" => $id]);
+        return $this->query(
+            sqlRequest: "SELECT * FROM $this->table WHERE id = :id",
+            data: ["id" => $id]
+        );
     }
 
     public function where(string $field, string $value)
     {
+        return $this->query(
+            sqlRequest: "SELECT * FROM $this->table WHERE $field = :$field",
+            data: [$field => $value]
+        );
     }
 
     public function create(array $data)
@@ -99,11 +106,11 @@ abstract class Model
             $stmt = $this->database->getPDO()->query($sqlRequest);
         }
 
-        $stmt->setFetchMode(PDO::FETCH_CLASS, get_class($this));
+        $stmt->setFetchMode(PDO::FETCH_CLASS, get_class($this), [$this->database]);
         if ($fetchAll) {
-            return $stmt->fetch();
-        } else {
             return $stmt->fetchAll();
+        } else {
+            return $stmt->fetch();
         }
     }
 }

@@ -5,9 +5,9 @@
     
     class HomeController extends Controller{
 
-        public function index()
+        public function index(): string
         {
-            views();
+            return "bonjourt";
         }
 
 

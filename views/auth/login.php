@@ -12,7 +12,7 @@
 <body class="bg-gray-300">
     <div class="w-full h-screen flex justify-center items-center">
         <div class="bg-slate-700 w-400 rounded-xl shadow-lg p-6 flex items-center">
-            <form action="post" class="w-full">
+            <form method="post" action="/login" class="w-full">
                 <div>
                     <label for="email" class="text-white mb-2 block">Addresse email</label>
                     <input type="email" name="email" id="email" class="w-full p-2 rounded-sm">

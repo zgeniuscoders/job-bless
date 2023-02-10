@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Router;
+namespace Src\Core\Router;
 
-use Src\Router\Exception\BadRequestMethodException;
+use Psr\Http\Message\ServerRequestInterface;
 use Src\Router\Exception\NotFoundException;
 
 class Router
@@ -25,19 +25,13 @@ class Router
     }
 
 
-    public function run()
+    public function run(ServerRequestInterface $request)
     {
-        if (!isset($this->routes[$_SERVER["REQUEST_METHOD"]])) {
-            throw new BadRequestMethodException('The request method doesn\'t exist');
-        }
-
-        foreach ($this->routes[$_SERVER["REQUEST_METHOD"]] as $route) {
-
-            if ($route->match($_GET["uri"])) {
-                return $route->call();
+        foreach ($this->routes[$request->getMethod()] as $route) {
+            $uri = $request->getUri()->getPath();
+            if ($route->match($uri)) {
+                return $route;
             }
         }
-
-        throw new NotFoundException("404");
     }
 }

@@ -1,6 +1,6 @@
 <?php 
 
-    namespace Src\Router\Exception;
+    namespace Src\Core\Router\Exceptions;
 
 use Exception;
 

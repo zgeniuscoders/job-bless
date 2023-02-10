@@ -1,13 +1,22 @@
 {
   "name": "zgeniuscoders/social-network",
-  "require": {},
+  "require": {
+    "guzzlehttp/psr7": "^2.4",
+    "psr/http-server-middleware": "^1.0",
+    "php-di/php-di": "^7.0",
+    "http-interop/response-sender": "^1.0",
+    "filp/whoops": "^2.14"
+  },
   "autoload": {
     "files": [
-      "src/Helpers/functions.php"
+      "src/Core/Helpers/functions.php"
     ],
     "psr-4": {
       "App\\": "app/",
       "Src\\": "src/"
     }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.0"
   }
 }

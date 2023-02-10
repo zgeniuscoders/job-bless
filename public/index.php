@@ -1,19 +1,28 @@
 <?php
 
-use App\Actions\RegisterUser;
-use App\Controllers\AuthController;
 use App\Controllers\HomeController;
-use Src\Router\Router;
+use Src\App;
+use Whoops\Run;
+
+use function Http\Response\send;
+use GuzzleHttp\Psr7\ServerRequest;
+use Src\Core\Router\Router;
+use Whoops\Handler\PrettyPageHandler;
 
 include "../vendor/autoload.php";
 define("DOCUMENT_ROOT", dirname(__DIR__));
 define("PUBLIC", __DIR__);
 
-$router = new Router();
-$router->resolve("GET", "/", [HomeController::class, 'index'], "home")
-    ->resolve("GET", "/login", [AuthController::class, "login"], "auth.login")
-    ->resolve("POST", "/login", [AuthController::class, "login"], "auth")
-    ->resolve("GET", "/register", [RegisterUser::class, "index"], "auth.register")
-    ->resolve("POST", "/register", [RegisterUser::class, "create"], "auth.register.create");
 
-$router->run();
+$whoops = new Run();
+$whoops->pushHandler(new PrettyPageHandler());
+$whoops->register();
+
+$app = new App("../config/config.php");
+
+
+$router = $app->getContainer()->get(Router::class);
+$router->resolve("GET", "/heel", [HomeController::class, 'index'], 'd');
+
+$response = $app->run(ServerRequest::fromGlobals());
+send($response);
