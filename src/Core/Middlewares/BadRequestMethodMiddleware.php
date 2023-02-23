@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Src\Core\Middlewares;
+namespace Legacy\Legacy\Core\Middlewares;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Src\Core\Middlewares\Exceptions\BadRequestMethodException;
-use Src\Core\Router\Route;
+use Legacy\Legacy\Core\Middlewares\Exceptions\BadRequestMethodException;
+use Legacy\Legacy\Core\Router\Route;
 
 class BadRequestMethodMiddleware implements MiddlewareInterface
 {

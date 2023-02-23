@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Core\Middlewares;
+namespace Legacy\Legacy\Core\Middlewares;
 
-use Src\Core\Router\Router;
+use Legacy\Legacy\Core\Router\Router;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Message\ServerRequestInterface;

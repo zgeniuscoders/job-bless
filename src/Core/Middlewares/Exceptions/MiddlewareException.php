@@ -1,7 +1,7 @@
 <?php 
 
 
-    namespace Src\Core\Middlewares\Exceptions;
+    namespace Legacy\Legacy\Core\Middlewares\Exceptions;
 
 use Exception;
 

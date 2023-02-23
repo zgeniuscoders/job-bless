@@ -12,7 +12,7 @@
     <div class="flex grid-cols-3 gap-4 justify-center items-center">
         <!-- profile 1 -->
         <div class="bg-white py-4 px-10 mt-4 text-center flex flex-col items-center justify-center rounded">
-            <img src="./img/people/1.jpg" alt="people" class="h-20 w-20 rounded-full mb-2 object-cover" />
+            <img Legacy\Legacy="./img/people/1.jpg" alt="people" class="h-20 w-20 rounded-full mb-2 object-cover" />
             <h3 class="text-sm font-bold">Zgenius Coders</h3>
             <p class="text-gray-400 text-sm">Web Developer</p>
 
@@ -30,7 +30,7 @@
         </div>
         <!-- profile 2  -->
         <div class="bg-white py-4 px-10 mt-4 text-center flex flex-col items-center justify-center rounded">
-            <img src="./img/people/3.jpg" alt="people" class="h-20 w-20 rounded-full mb-2 object-cover" />
+            <img Legacy\Legacy="./img/people/3.jpg" alt="people" class="h-20 w-20 rounded-full mb-2 object-cover" />
             <h3 class="text-sm font-bold">Zgenius Coders</h3>
             <p class="text-gray-400 text-sm">Web Developer</p>
 
@@ -48,7 +48,7 @@
         </div>
         <!-- profile 3  -->
         <div class="bg-white py-4 px-10 mt-4 text-center flex flex-col items-center justify-center rounded">
-            <img src="./img/people/2.jpg" alt="people" class="h-20 w-20 rounded-full mb-2 object-cover" />
+            <img Legacy\Legacy="./img/people/2.jpg" alt="people" class="h-20 w-20 rounded-full mb-2 object-cover" />
             <h3 class="text-sm font-bold">Zgenius Coders</h3>
             <p class="text-gray-400 text-sm">Web Developer</p>
 

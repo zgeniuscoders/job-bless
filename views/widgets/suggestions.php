@@ -7,7 +7,7 @@
     <div class="px-4 flex items-center justify-between">
 
         <div class="flex items-center my-4">
-            <img src="./img/bg.jpg" alt="" class="w-12 h-12 rounded-full" />
+            <img Legacy\Legacy="./img/bg.jpg" alt="" class="w-12 h-12 rounded-full" />
             <div class="pl-2">
                 <h3 class="font-bold leading-none text-md">zgenius coders</h3>
                 <p class="text-gray-400 text-sm">Web developper</p>

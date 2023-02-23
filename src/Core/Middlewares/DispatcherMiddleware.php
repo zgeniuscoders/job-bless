@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Src\Core\Middlewares;
+namespace Legacy\Legacy\Core\Middlewares;
 
 use Exception;
 use GuzzleHttp\Psr7\Response;
@@ -10,8 +10,8 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Src\Core\Router\Route as RouterRoute;
-use Src\Router\Route;
+use Legacy\Legacy\Core\Router\Route as RouterRoute;
+use Legacy\Legacy\Router\Route;
 
 class DispatcherMiddleware implements MiddlewareInterface
 {

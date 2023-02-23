@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\Core\Router;
+namespace Legacy\Legacy\Core\Router;
 
-use Src\Core\Router\Exceptions\ClassException;
+use Legacy\Legacy\Core\Router\Exceptions\ClassException;
 
 /**
  * Permet de representer une route
@@ -10,10 +10,19 @@ use Src\Core\Router\Exceptions\ClassException;
 class Route
 {
 
+    /**
+     * @param string $method
+     * @param string $uri
+     * @param callback|array $callback
+     * @param string $name
+     */
     public function __construct(private string $method, private string $uri, private $callback, private string $name)
     {
     }
 
+    /**
+     * @return callback|array
+     */
     public function getCallback()
     {
         if (is_callable($this->callback)) {
@@ -29,12 +38,18 @@ class Route
         throw new ClassException("Class or Method Doesn't exist...");
     }
 
+    /**
+     * @return string
+     */
     public function getMethod(): string
     {
         return $this->method;
     }
 
-    public function getUri()
+    /**
+     * @return string
+     */
+    public function getUri(): string
     {
         return $this->uri;
     }
@@ -54,7 +69,6 @@ class Route
         if ($url != $this->uri) {
             return false;
         }
-
         return true;
     }
 }

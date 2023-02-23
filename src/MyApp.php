@@ -1,6 +1,6 @@
 <?php
 
-namespace Src;
+namespace Legacy\Legacy;
 
 use App\Controllers\HomeController;
 use DI\ContainerBuilder;
@@ -9,10 +9,11 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Src\Core\Middlewares\DispatcherMiddleware;
-use Src\Core\Middlewares\Exceptions\MiddlewareException;
+use Legacy\Legacy\Core\Middlewares\DispatcherMiddleware;
+use Legacy\Legacy\Core\Middlewares\Exceptions\MiddlewareException;
+use Legacy\Legacy\Core\Render\Php\PhpRender;
 
-class App implements RequestHandlerInterface
+class MyApp implements RequestHandlerInterface
 {
 
     /**
@@ -23,10 +24,6 @@ class App implements RequestHandlerInterface
     private int $index = 0;
 
     private $container;
-
-    private $modules = [
-        HomeController::class
-    ];
 
     private string $frameworkConfig = __DIR__ . DIRECTORY_SEPARATOR . "Config" . DIRECTORY_SEPARATOR . "config.php";
 
@@ -76,9 +73,9 @@ class App implements RequestHandlerInterface
         return $this->container;
     }
 
-    public function addMiddleware(){
-        foreach ($this->getContainer()->get('MIDDLEWARES') as $middleware)
-        {
+    public function addMiddleware()
+    {
+        foreach ($this->getContainer()->get('MIDDLEWARES') as $middleware) {
             $this->middlewares[] = $middleware;
         }
     }
@@ -89,9 +86,6 @@ class App implements RequestHandlerInterface
      */
     public function run(ServerRequestInterface $request): ResponseInterface
     {
-        foreach ($this->modules as $module) {
-            $this->getContainer()->get($module);
-        }
         return $this->handle($request);
     }
 }

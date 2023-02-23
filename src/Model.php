@@ -1,9 +1,9 @@
 <?php
 
-namespace Src\Core;
+namespace Legacy\Legacy\Core;
 
 use PDO;
-use Src\Database\Database;
+use Legacy\Legacy\Database\Database;
 
 /**
  * present a table in the database

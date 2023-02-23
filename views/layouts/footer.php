@@ -29,7 +29,7 @@
         <ul>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -45,7 +45,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/9.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/9.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -61,7 +61,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/10.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/10.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -77,7 +77,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/8.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/8.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -93,7 +93,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -109,7 +109,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -125,7 +125,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -141,7 +141,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>
@@ -157,7 +157,7 @@
           </li>
           <li class="flex items-center justify-between mb-2 border-b pb-2">
             <a href="" class="flex items-center gap-2 w-full">
-              <img src="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
+              <img Legacy\Legacy="./img/people/6.jpg" alt="" class="h-12 w-12 object-cover rounded-full">
               <div class="">
                 <h3 class="font-bold leading-none mb-1">zgenius coders</h3>
                 <p class="text-gray-300 leading-none">Hello how are you ?</p>

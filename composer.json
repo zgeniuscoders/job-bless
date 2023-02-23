@@ -8,12 +8,9 @@
     "filp/whoops": "^2.14"
   },
   "autoload": {
-    "files": [
-      "src/Core/Helpers/functions.php"
-    ],
     "psr-4": {
       "App\\": "app/",
-      "Src\\": "src/"
+      "Legacy\\Legacy\\": "src/"
     }
   },
   "require-dev": {

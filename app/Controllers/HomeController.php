@@ -1,14 +1,13 @@
-<?php 
+<?php
 
 
-    namespace App\Controllers;
-    
-    class HomeController extends Controller{
+namespace App\Controllers;
 
-        public function index(): string
-        {
-            return "bonjourt";
-        }
+class HomeController extends Controller
+{
 
-
+    public function index(): string
+    {
+        return "bonjourt";
     }
+}

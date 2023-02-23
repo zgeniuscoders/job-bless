@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Database;
+namespace Legacy\Legacy\Database;
 
 use PDO;
 

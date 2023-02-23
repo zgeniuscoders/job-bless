@@ -1,8 +1,10 @@
-<?php 
+<?php
 
 
-    namespace App\Controllers;
+namespace App\Controllers;
 
-    abstract class Controller{
+use Legacy\Legacy\Core\Render\Php\PhpRender;
 
-    }
+abstract class Controller
+{
+}

@@ -4,7 +4,7 @@ namespace App\Actions;
 
 use App\Models\User;
 use DateTime;
-use Src\Core\Hash;
+use Legacy\Legacy\Core\Hash;
 
 class LoginUser
 {

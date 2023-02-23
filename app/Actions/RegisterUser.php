@@ -4,8 +4,8 @@ namespace App\Actions;
 
 use App\Models\User;
 use DateTime;
-use Src\Core\Hash;
-use Src\Core\Upload;
+use Legacy\Legacy\Core\Hash;
+use Legacy\Legacy\Core\Upload;
 
 class RegisterUser
 {

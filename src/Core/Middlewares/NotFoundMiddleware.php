@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Core\Middlewares;
+namespace Legacy\Legacy\Core\Middlewares;
 
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;

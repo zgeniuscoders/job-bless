@@ -1,13 +1,15 @@
 <?php
 
-use Src\Core\Middlewares\BadRequestMethodMiddleware;
-use Src\Core\Router\Router;
+use Psr\Container\ContainerInterface;
+use Legacy\Legacy\Core\Middlewares\BadRequestMethodMiddleware;
+use Legacy\Legacy\Core\Router\Router;
 
 use function DI\create;
-use Src\Core\Middlewares\DispatcherMiddleware;
-use Src\Core\Middlewares\NotFoundMiddleware;
-use Src\Core\Middlewares\RouterMiddleware;
-use Src\Core\Middlewares\TrainingSlashMiddleware;
+use Legacy\Legacy\Core\Middlewares\DispatcherMiddleware;
+use Legacy\Legacy\Core\Middlewares\NotFoundMiddleware;
+use Legacy\Legacy\Core\Middlewares\RouterMiddleware;
+use Legacy\Legacy\Core\Middlewares\TrainingSlashMiddleware;
+use Legacy\Legacy\Core\Render\Php\PhpRender;
 
 return [
 
@@ -20,5 +22,6 @@ return [
     ],
 
     Router::class => create(),
+    PhpRender::class => create(ContainerInterface::class)
 
 ];

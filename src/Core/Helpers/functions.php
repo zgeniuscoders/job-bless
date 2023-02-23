@@ -26,5 +26,5 @@ function public_path(): string
 function js(string $path)
 {
     $path = "js" . DIRECTORY_SEPARATOR . $path;
-    echo "<script src=" . $path . " defer></script>";
+    echo "<script Legacy\Legacy=" . $path . " defer></script>";
 }

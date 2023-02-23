@@ -1,6 +1,6 @@
 <div class="bg-white rounded-tr rounded-tl overflow-hidden">
     <div class="h-32 w-full bg-slate-900 relative ">
-        <img class="h-32 w-32 rounded-full bg-blue-400 absolute object-cover top-16 text-white flex items-center justify-center border-8 border-solid border-white" style="left: 50%; transform: translateX(-50%)" src="./img/people/9.jpg" />
+        <img class="h-32 w-32 rounded-full bg-blue-400 absolute object-cover top-16 text-white flex items-center justify-center border-8 border-solid border-white" style="left: 50%; transform: translateX(-50%)" Legacy\Legacy="./img/people/9.jpg" />
 
     </div>
     <div>

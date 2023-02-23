@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Src\Core\Model;
+use Legacy\Legacy\Core\Model;
 
 class User extends Model
 {

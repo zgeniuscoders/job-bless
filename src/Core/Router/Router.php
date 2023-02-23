@@ -1,9 +1,9 @@
 <?php
 
-namespace Src\Core\Router;
+namespace Legacy\Legacy\Core\Router;
 
 use Psr\Http\Message\ServerRequestInterface;
-use Src\Router\Exception\NotFoundException;
+use Legacy\Legacy\Router\Exception\NotFoundException;
 
 class Router
 {
