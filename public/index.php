@@ -16,9 +16,5 @@ $whoops->pushHandler(new PrettyPageHandler());
 $whoops->register();
 
 $app = new MyApp("../config/config.php");
-
-$router = $app->getContainer()->get(Router::class);
-$router->resolve("GET", "/home", [HomeController::class, 'index'], 'home');
-
 $response = $app->run(ServerRequest::fromGlobals());
 send($response);

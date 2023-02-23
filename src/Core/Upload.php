@@ -2,9 +2,14 @@
 
 namespace Legacy\Legacy\Core;
 
+use Psr\Container\ContainerInterface;
 
 class Upload
 {
+    public function __construct(private ContainerInterface $container)
+    {
+        
+    }
 
     static public function upload(string $from, array $file): string
     {

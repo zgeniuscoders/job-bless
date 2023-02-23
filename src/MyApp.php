@@ -2,16 +2,13 @@
 
 namespace Legacy\Legacy;
 
-use App\Controllers\HomeController;
 use DI\ContainerBuilder;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Legacy\Legacy\Core\Middlewares\DispatcherMiddleware;
 use Legacy\Legacy\Core\Middlewares\Exceptions\MiddlewareException;
-use Legacy\Legacy\Core\Render\Php\PhpRender;
 
 class MyApp implements RequestHandlerInterface
 {
@@ -86,6 +83,10 @@ class MyApp implements RequestHandlerInterface
      */
     public function run(ServerRequestInterface $request): ResponseInterface
     {
+        // appel les controllers
+        foreach ($this->container->get("CONTROLLERS_ROUTES") as $controller) {
+            $this->container->get($controller);
+        }
         return $this->handle($request);
     }
 }

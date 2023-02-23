@@ -31,7 +31,7 @@ class Route
             class_exists($this->callback[0])
             && method_exists($this->callback[0], $this->callback[1])
         ) {
-            $controller = new $this->callback[0]();
+            $controller = $this->callback[0];
             $method = $this->callback[1];
             return [$controller, $method];
         }

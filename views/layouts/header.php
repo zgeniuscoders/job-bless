@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <?php 
-    css("all.min.css");
-    css("app.css");
-    js("app.js"); 
-    ?>
+    <link rel="stylesheet" href="<?= $render->asset("css/app.css") ?>" />
+    <link rel="stylesheet" href="<?= $render->asset("css/all.min.css") ?>" />
+    <script src="<?= $render->asset("app/app.js") ?>" defers></script>
 </head>
 
 <body class="bg-gray-300">

@@ -1,14 +1,14 @@
-<?php views("./layouts/header.php") ?>
+<?php $render->view("layouts.header") ?>
 <div class="container mx-auto md:px-10 top-24 grid md:grid-cols-custom gap-4 relative">
     <aside class="hidden md:block sticky h-max top-24">
-        <?php views("./widgets/profile.php") ?>
-        <?php views("./widgets/suggestions.php") ?>
+        <?php $render->view("widgets/profile") ?>
+        <?php $render->view("widgets/suggestions") ?>
     </aside>
     <div>
-        <?php views("./widgets/create-post.php") ?>
+        <?php $render->view("widgets/create-post") ?>
         <main class="mt-4">
-            <?php views("./widgets/post.php") ?>
-            <?php views("./widgets/top-profiles.php") ?>
+            <?php $render->view("widgets/post") ?>
+            <?php $render->view("widgets/top-profiles") ?>
         </main>
     </div>
     <!-- website info -->
@@ -28,8 +28,8 @@
             </div>
 
         </div>
-        <?php views("./widgets/top-job.php") ?>
-        <?php views("./widgets/projets.php") ?>
+        <?php $render->view("widgets/top-job") ?>
+        <?php $render->view("widgets/projets") ?>
     </div>
 </div>
-<?php views("./layouts/footer.php") ?>
+<?php $render->view("layouts/footer") ?>
